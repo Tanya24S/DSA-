@@ -90,7 +90,24 @@ int main(){
        ***
       *****
      *******  */
-
+#include <iostream>
+using namespace std;
+int main(){
+    int a=1;
+    for(int i=7; i>=4; i--){
+        for(int j=i; j>=5;j--){
+            cout<<" ";
+        }
+        for(int c=1; c<=a; c++){
+            cout<<"*";
+        }
+        for(int j=i; j>=5;j--){
+            cout<<" ";
+        }
+        cout<<endl;
+        a+=2;
+    }
+}
 /* 8) *******
        *****
         ***
