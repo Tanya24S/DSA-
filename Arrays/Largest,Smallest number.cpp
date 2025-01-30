@@ -97,9 +97,26 @@ int main(){
     }
 }
 
-//Better solution
+//Better solution: Using the largest element
+#include <iostream>
+using namespace std;
 
-
-
+int main(){
+    int arr[5]={3,4,7,1,5};
+    int largest= arr[0];
+    for(int i=0; i<=4; i++){
+        int number=arr[i];
+        if(number>largest){
+            largest=number;
+        }
+    }
+    int second=arr[0];
+    for(int i=0; i<=4; i++){
+        if(arr[i]>=arr[0] && arr[i]!=largest){
+            second=arr[i];
+        }
+    }
+    cout<<second;
+}
 
 //Optimal Solution
