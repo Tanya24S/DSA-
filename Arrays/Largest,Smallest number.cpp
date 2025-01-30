@@ -38,7 +38,8 @@ int main(){
     quickSort(arr);
     cout<< arr[4];
 }
-//Optimal solution
+
+//Optimal solution:By declaring a variable then comparing
 #include <bits/stdc++.h> 
 int largestElement(vector<int> &arr, int n) {
     int largest=arr[0];
@@ -51,7 +52,7 @@ int largestElement(vector<int> &arr, int n) {
 }
 
 //Second Largest Element
-//Brute Force solution: By declaring a variable then comparing
+//Brute Force solution
 
 
 
