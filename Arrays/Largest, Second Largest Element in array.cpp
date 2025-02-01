@@ -1,5 +1,5 @@
 //Largest Element
-//Brute force solution: Using quick sort
+//Brute force solution: Using quick sort      Time Complexity: O(NlogN)
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -39,7 +39,7 @@ int main(){
     cout<< arr[4];
 }
 
-//Optimal solution:By declaring a variable then comparing
+//Optimal solution:By declaring a variable then comparing      Time Complexity: O(N)
 #include <bits/stdc++.h> 
 int largestElement(vector<int> &arr, int n) {
     int largest=arr[0];
@@ -52,7 +52,7 @@ int largestElement(vector<int> &arr, int n) {
 }
 
 //Second Largest Element
-//Brute Force solution: Using quick sort algorithm
+//Brute Force solution: Using quick sort algorithm      Time Complexity: O(NlogN+N)
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -97,7 +97,7 @@ int main(){
     }
 }
 
-//Better solution: Using the largest element
+//Better solution: Using the largest element      Time Complexity: O(N+N)=O(2N)
 #include <iostream>
 using namespace std;
 
@@ -119,4 +119,25 @@ int main(){
     cout<<second;
 }
 
-//Optimal Solution
+//Optimal Solution:Taking second largest as -1(considering no -ve numbers) otherwise INTMIN      Time Complexity: O(N)
+#include <iostream>
+using namespace std;
+
+int main(){
+    int arr[5]={3,4,7,1,5};
+    int largest= arr[0];
+    int second=-1;
+    for(int i=0; i<=4; i++){
+        int number=arr[i];
+        if(number>largest){
+            if(number!=largest){
+                second=largest;
+            }
+            largest=number;
+        }
+        if(number!=largest && number>second){
+            second=number;
+        }
+    }
+    cout<<second;
+}
