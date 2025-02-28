@@ -1,5 +1,19 @@
 //Check if sorted
-//1.
+//1. one way:
+#include <iostream>
+using namespace std;
+
+int main(){
+    int arr[5]={3,9,7,10,9};
+    for(int i=1; i<5; i++){
+        if(arr[i-1] > arr[i]){
+        cout << "not sorted";
+        return 0;
+        }
+    }
+    cout<<"sorted";
+}
+//another way:
 #include <iostream>
 using namespace std;
 
