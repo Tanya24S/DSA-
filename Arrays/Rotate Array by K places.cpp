@@ -43,7 +43,7 @@ int main(){
     }
     return 0;
 }
-//3rd code: Better and optimized code
+//3rd code: Better and optimized code(I could just stored it in a temp variable🤦🏽‍♀️)
 
 
 //Right Rotate Array by 1 place
