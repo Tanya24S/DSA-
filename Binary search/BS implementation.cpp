@@ -1,3 +1,4 @@
+//Binary search is mostly applied on given sorted array
 //Leetcode problem:704
 class Solution {
 public:
