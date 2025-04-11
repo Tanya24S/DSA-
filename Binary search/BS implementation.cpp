@@ -1,4 +1,5 @@
 //Binary search is mostly applied on given sorted array
+//Iterative code
 //Leetcode problem:704
 class Solution {
 public:
@@ -21,3 +22,6 @@ public:
 };
 //Note: Instead of mid=(low+high)/2, we must write mid=low+(high-low)/2, this is done to avoid int overflow, otherwise in cases
 //where low and mid summation exceeds the limit then we might get wrong mid(in most cases negative number).
+//Recursive code
+
+
