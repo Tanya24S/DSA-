@@ -42,3 +42,4 @@ int main(){
     cout<<bs(target,arr);
     return 0;
 } 
+//Another approach would be using the first and last occurrence indexes and subtracting them to find the count of the traget element.
