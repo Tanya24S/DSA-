@@ -43,39 +43,6 @@ int main(){
     return 0;
 } //this code has one issue, that if mid is the target then it's index will be the first pushback and our index vector will not return us the sorted version or the first occurence index exactly
 //Second approach(much better)
-#include <iostream>
-#include <string>
-#include <vector>
-using namespace std;
-
-int bs(int target, vector<int> arr){
-    vector<int> index;
-    int low=0;
-    int high=arr.size()-1;
-    int res;
-    while(low<=high){
-        int mid=(low+high)/2;
-        if(arr[mid]==target){
-            res=mid;
-            high=mid-1;
-        }
-        else if(arr[mid]>target){
-            high=mid-1;
-        }
-        else{
-            low=mid+1;
-        }
-    }
-    return res;
-}
-        
-        
-int main(){
-    vector<int> arr={1,2,3,4,8,8,10};
-    int target=8;
-    cout<<bs(target,arr);
-    return 0;
-} 
 //Leetcode problem 34:
 class Solution {
 public:
