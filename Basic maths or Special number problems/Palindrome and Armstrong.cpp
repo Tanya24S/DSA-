@@ -20,8 +20,6 @@ public:
     }
 };
 
-//Palindrome(Strings)
-
 //Armstrong number-Leetcode problem 1134
 class Solution {
   public:
