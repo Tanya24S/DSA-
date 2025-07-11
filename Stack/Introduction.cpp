@@ -12,3 +12,10 @@
 st.size(): to check size of stack
 underflow: when you try to call when stack is empty(common)
 overflow: when push called on full st(unlikely)
+
+//Why use stack when vector has the above features? bcz it is a legacy ds and was here before vector(but companies might not use stack since vector can handle it)
+
+//Note:
+//In the NGE question: we need return in order hence we can follow two approaches: 1. maintain a hashmap but that would increase space complexity
+                                                                                //2. Use array index feature itself(hence instead of element append index)
+
