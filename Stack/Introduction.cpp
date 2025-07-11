@@ -4,5 +4,11 @@
 //First identify the pattern(from those you have studied) then if there can be any variation from it.
 //_______________________________________________________________________________________________________________________________________________________________________________
 // (Geeks for geeks offline course)
-//To implement any solution that requires you to remove elements from between adn thenr estack them without any gap, usuallyw e use stack for such problems
+//To implement any solution that requires you to remove elements from between adn thenr estack them without any gap, usually we use stack for such problems
 //Also, to implement insertion, access the last element, as well remove the last element, for such operation we'll use stack that has LIFO implementation (Last in first out)
+
+
+//Gfg Lec 1:
+st.size(): to check size of stack
+underflow: when you try to call when stack is empty(common)
+overflow: when push called on full st(unlikely)
