@@ -45,3 +45,19 @@ public:
         return res;
     }
 };
+//Even better solution using strings and not stack
+class Solution {
+public:
+    string removeStars(string s) {
+        string a;
+        for(int i=0; i<s.size(); i++){
+            if(s[i]!='*'){
+                a.push_back(s[i]);
+            }
+            else{
+                a.pop_back();
+            }
+        }
+        return a;
+    }
+};
