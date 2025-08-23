@@ -8,3 +8,7 @@
 //Complete Binary trees
 
 //Implementation of a binary tree
+
+//Three types of traversals: 1. Preorder traversal 2. Postorder 3. Inorder
+//Preorder traversal code:
+
