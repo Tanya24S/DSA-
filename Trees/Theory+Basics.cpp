@@ -10,5 +10,48 @@
 //Implementation of a binary tree
 
 //Three types of traversals: 1. Preorder traversal 2. Postorder 3. Inorder
-//Preorder traversal code:
-
+//Preorder traversal code(leetcode 144):
+class Solution {
+public:
+    void rec(TreeNode* root, vector<int> &result){
+        if(root==NULL) return;
+        result.push_back(root->val);
+        rec(root->left,result);
+        rec(root->right, result);
+    }
+    vector<int> preorderTraversal(TreeNode* root) {
+        vector<int> result;
+        rec(root, result);
+        return result;
+    }
+};
+//Inorder traversal(leetcode 94):
+class Solution {
+public:
+    void rec(TreeNode* root, vector<int> &result){
+        if(root==NULL) return;
+        rec(root->left, result);
+        result.push_back(root->val);
+        rec(root->right, result);
+    }
+    vector<int> inorderTraversal(TreeNode* root) {
+        vector<int> result;
+        rec(root, result);
+        return result;
+    }
+};
+//Post order traversal(leetcode 145):
+class Solution {
+public:
+    void rec(TreeNode* root,vector<int> &result){
+        if(root==NULL) return;
+        rec(root->left, result);
+        rec(root->right, result);
+        result.push_back(root->val);
+    }
+    vector<int> postorderTraversal(TreeNode* root) {
+        vector<int> result;
+        rec(root, result);
+        return result;
+    }
+};
