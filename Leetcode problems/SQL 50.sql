@@ -1,0 +1,13 @@
+--SELECT
+--1757. Recyclable and Low Fat Products
+SELECT product_id FROM Products WHERE low_fats='Y' AND recyclable='Y'
+--1683. Invalid Tweets
+select tweet_id from Tweets where length(content)>15;
+--584. Find Customer Referee
+SELECT name FROM Customer WHERE referee_id!=2 OR referee_id IS NULL;
+--595. Big Countries
+SELECT name, population, area FROM World WHERE population>=25000000 OR area>=3000000;
+--1148. Article Views I
+select distinct author_id as id from views where viewer_id=author_id order by author_id ASC;
+
+--BASIC JOINS
