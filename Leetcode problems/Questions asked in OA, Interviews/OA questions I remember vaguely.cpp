@@ -21,7 +21,7 @@ vector<int> check_monotonic(vector<int> arr, vector<int> &result){
     return result;
 }
 int main(){
-    vector<int> arr={10, 10, 10, 10, 10};
+    vector<int> arr={10, 11, 4, 5, 8};
     vector<int> result;
     check_monotonic(arr, result);
     for(int i=0; i<result.size(); i++){  //the compiler is giving me a warning though even if the code is running fine because of unsigned and int comparison.
@@ -29,4 +29,6 @@ int main(){
     }
     return 0;
 }
-//Ques2: 
+//Ques2: I was given array with stick lengths bird trying to make nest and we are supposed to collect sticks until the length of nest reaches atleast 100 
+//and return sticks chosen.
+
