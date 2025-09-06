@@ -44,7 +44,16 @@ int main(){
     return 0;
 }
 //Print Linearly from 1 to N
-
+void rec(int n){
+    if(n==0)return;
+    rec(n-1); //head recursion   //I love this, a witty way to use the way recursion work, instead of doing a normal counter or ++,
+    cout<<n<<endl;                //we use recursion and make it print after running till the end.
+}
+int main(){
+    int n=5;
+    rec(n);
+    return 0;
+}
 
 //Print from N to 1
 #include <iostream>
