@@ -4,14 +4,16 @@
 using namespace std;
 
 int main(){
-    int arr[5]={3,9,7,10,9};
-    for(int i=1; i<5; i++){
+    int arr[6]={3,9,7,7,10,9};
+    bool is=true;
+    for(int i=0; i<6; i++){
         if(arr[i-1] > arr[i]){
-        cout << "not sorted";
-        return 0;
+            cout<<"Array is not sorted";
+            is=false;
+            break;
         }
     }
-    cout<<"sorted";
+    if(is==true) cout<<"Sorted";
 }
 //another way:
 #include <iostream>
@@ -20,14 +22,13 @@ using namespace std;
 int main(){
     int arr[5]={3,4,7,7,9};
     int c=0;
-    for(int i=0; i<=3; i++){
+    for(int i=0; i<=4; i++){
         if(arr[i]>arr[i+1]){
             break;
         }
         c++;
-        cout<<c;
     }
-    cout<<c;
+    cout<<c; //This way you will be able to tell, till which index the array is sorted
     if(c==4){ cout<<"Array is sorted";}
     else{ cout<<"Array is not sorted";}
 }
@@ -37,4 +38,22 @@ int main(){
 
 
 //3.Remove duplicates from sorted array   Leetcode problem:26
-
+class Solution {
+public:
+    int removeDuplicates(vector<int>& nums) {
+        int k=0;
+        int index=0;
+        for(int i=0; i<nums.size(); i++){
+            int j=i+1;
+            if(j<nums.size() && nums[i]==nums[j]){
+                continue;
+            }
+            else{
+                k++;
+                nums[index]=nums[i];
+                index++;
+            }
+        }
+        return k;
+    }
+};
