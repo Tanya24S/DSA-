@@ -17,8 +17,10 @@
 //Round-2-> Technical Interview: (out of 146 students 40 were shortlisted for interview)
 I was asked to give my introduction, then why join phonepe when my branch was ece-ai, then he asked me what is sql union,join
 Then he asked me a few puzzles like: If an ant is on one vertice of a cube and needs to reach on the vertice of opposite face but can't fly diagonally that is root 3 then what
-would be the shortest path: I said roo2+length but apparently that wasn't the answer, then he asked me if youa re travelling in metro how will you tell number of people
-in that train-> Answer could be that we know initial weight of the train, we can know the weight increased and take an average weight and divide to know approx how many people are there,
+would be the shortest path: I said roo2+length but apparently that wasn't the answer 
+  //( Answer I decoded after reaching home: https://drive.google.com/file/d/1aqeTgUHV-KBy2jz9qPINCqffGxDN7zze/view?usp=sharing)
+then he asked me if you are travelling in metro how will you tell number of people in that train-> Answer could be that we know initial weight of the train, 
+we can know the weight increased and take an average weight and divide to know approx how many people are there,
 then he asked me how to know how many people in metro station or said there are multiple lines right, I didn't understand honestly -> I said we'll just use a counter of how many people
 came in through the gates and entered through cards/qr (but apparently he was looking for a different answer)
 Lastly, he asked me what is the project I like the most in my resume and to explain that and a few questions from that
