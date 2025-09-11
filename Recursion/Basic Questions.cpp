@@ -72,3 +72,35 @@ int main(){
     rec(n);
     return 0;
 }
+//Sum of first n numbers
+void rec(int n, int &sum){          //normal way
+    if(n==0) return;
+    rec(n-1, sum);
+    sum+=n;
+}
+int main(){
+    int n;
+    cout<< "Enter the number:";
+    cin>>n;
+    int sum=0;
+    rec(n, sum);
+    cout<<sum;
+}
+//Two ways of defining recursion answers, parameterized, functional
+//parameterized: where you pass in parameter only
+//Functional:                                      //sum = n + rec(n-1, sum);//
+int rec(int n, int &sum){
+    if(n==0){
+        return 0;
+    }
+    sum = n + rec(n-1, sum);
+    return sum;
+}
+int main(){
+    int n;
+    cout<< "Enter the number:";
+    cin>>n;
+    int sum=0;
+    rec(n, sum);
+    cout<<sum;
+}
