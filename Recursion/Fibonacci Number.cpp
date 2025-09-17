@@ -15,6 +15,4 @@ public:
         else return answer;
     }
 };
-//Code 2 optimized using dp:
-//Dynamic programming is like cache hit or miss
 
