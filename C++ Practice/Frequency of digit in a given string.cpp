@@ -12,8 +12,8 @@ int main(){
    cin>> s;
    int c=0;
    for(char t: s){
-       if(isdigit(t)) c++;
-   }
+       if(isdigit(t)) c++;  //isdigit understanding so basically it checks if it lies within ASCII range for '0' and '9' that is 48 and 57 respt
+   }                            //So basically it checks if the ch lies between ch>='0' && ch<='9' this is how isdigit works
    cout<<endl;
    cout<<c;
    return 0;
