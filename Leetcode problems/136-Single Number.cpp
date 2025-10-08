@@ -34,4 +34,15 @@ public:
         return -1;
     }
 };
-//Code 3:      
+//Code 3:      using xor operator
+class Solution {
+public:
+    int singleNumber(vector<int>& nums) {
+        int num=0;
+        int n=nums.size();
+        for(int i=0; i<n; i++){
+            num=num^nums[i];
+        }
+        return num;
+    }
+};
