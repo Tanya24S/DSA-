@@ -16,3 +16,7 @@ select eu.unique_id, e.name from Employees e left join EmployeeUNI eu on e.id=eu
 --1068. Product Sales Analysis I
 select pr.product_name, sl.year, sl.price from Sales sl inner join Product pr on pr.product_id=sl.product_id;
 --1581. Customer Who Visited but Did Not Make Any Transactions
+
+--Advanced String Functions / Regex / Clause
+--176. Second Highest salary
+select max(salary) as SecondHighestSalary from Employee where salary not in (select max(salary) from Employee);
