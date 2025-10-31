@@ -20,3 +20,9 @@ select pr.product_name, sl.year, sl.price from Sales sl inner join Product pr on
 --Advanced String Functions / Regex / Clause
 --176. Second Highest salary
 select max(salary) as SecondHighestSalary from Employee where salary not in (select max(salary) from Employee);
+
+--Advanced Select and Joins
+--610. Triangle judgement
+select x, y, z, 'No' as triangle from Triangle where x+y<=z|| x+z<=y|| z+y<=x
+union
+select x, y, z, 'Yes' as triangle from Triangle where x+y>z and x+z>y and z+y>x;
