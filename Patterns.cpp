@@ -6,7 +6,6 @@
 #include <iostream>
 using namespace std;
 void pattern(int n){
-    int i=0;
     for(int i=0; i<n; i++){
         for(int j=0; j<n; j++){
             cout<<"*";
@@ -28,7 +27,6 @@ int main() {
 
 using namespace std;
 void pattern(int n){
-    int i=0;
     for(int i=0; i<n; i++){
         for(int j=0; j<i; j++){
             cout<<"*";
@@ -50,7 +48,6 @@ int main() {
 
 using namespace std;
 void pattern(int n){
-    int i=0;
     for(int i=1; i<=n; i++){
         for(int j=1; j<=i; j++){
             cout<<j;
@@ -72,7 +69,6 @@ int main() {
 
 using namespace std;
 void pattern(int n){
-    int i=0;
     for(int i=1; i<=n; i++){
         for(int j=1; j<=i; j++){
             cout<<i;
@@ -92,30 +88,42 @@ int main() {
       **
       *  */
 #include <iostream>
-using namespace std;
 
-int main(){
-    for (int i=1; i<=4; i++){
-        for(int j=4; j>=i;j--){
+using namespace std;
+void pattern(int n){
+    for(int i=n; i>=1; i--){
+        for(int j=1; j<=i; j++){
             cout<<"*";
         }
-        cout<<endl;
+        cout<<"\n";
     }
+}
+
+int main() {
+	int n;
+	cin>>n;
+	pattern(n);
 }
 /* 6) 1234
       123
       12
       1  */
 #include <iostream>
-using namespace std;
 
-int main(){
-    for (int i=4; i>=1; i--){
-        for(int j=1; j<=i;j++){
+using namespace std;
+void pattern(int n){
+    for(int i=n; i>=1; i--){
+        for(int j=1; j<=i; j++){
             cout<<j;
         }
-        cout<<endl;
+        cout<<"\n";
     }
+}
+
+int main() {
+	int n;
+	cin>>n;
+	pattern(n);
 }
 /* 7)   *
        ***
